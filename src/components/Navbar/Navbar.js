@@ -1,23 +1,46 @@
-import './Navbar.css'
-import { Link } from 'react-router-dom'
+import './Navbar.css';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+
+/* 
+props => { title, links }
+
+links = { [
+    {
+        'name': '[your link name]',
+        'linkURL' : '[you link URL]'
+    }, ...
+] }
+*/
 
 export default function Navbar( props ) {
-    const istrue = false
-    return(
-        <header className='navbar'>
-            <h1>{ props.name }</h1>
-            <nav>
-                <ul className='links'>
-                    <li className='link'>
-                        <Link to={'/'}>Home</Link>
-                    </li>
-                    <li className='link'>
-                        <Link to={'/'}>Contact</Link>
-                    </li>
-                    <li className='link' style={istrue? {width:'300px'}: {width: '150px'}}>
-                        <Link to={'/'}>Porfolio</Link>
-                    </li>
+
+    const [showLinks, setShowLinks] = useState(false)
+
+    const handleShowLinks = () => {
+        setShowLinks(!showLinks)
+    }
+
+    return (
+        <header className='bannier'>
+            <h1> 
+                <Link to={'/'}> <span className='bannier-text'>{ props.title }</span> </Link>
+            </h1>
+
+            <nav className={ `bannier-nav ${ showLinks ? "show-nav" : "hide-nav" }` }>
+                <ul className='nav-links'>
+                    { props.links.map( ( link ) => (
+
+                        <li key={ link.id } className='nav-link'>
+                            <Link to={ link.linkURL }> <p className='link-text'>{ link.name }</p> </Link>
+                        </li>
+
+                    ) ) }
                 </ul>
+                <button className='nav-burger' onClick={handleShowLinks}>
+                    <span className='burger-bar'></span>
+                </button>
             </nav>
         </header>
     )

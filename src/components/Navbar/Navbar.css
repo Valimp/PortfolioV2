@@ -1,22 +1,136 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --bannier-color: #1d201f;
+    --font-color: #ffc857;
+    --font-color-end: #D33F49;
+    --font: 'Poppins', 'sans-serif';
 }
 
-.navbar {
-    background-color: aquamarine;
+/*==============================*/
+/*       CLASSIC SCREEN         */
+/*==============================*/
+.bannier {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1rem;
+ min-height: 30px;
+ background-color: var(--bannier-color);
+ font-family: var(--font);
+ z-index: 9;
+}
+
+.bannier-text {
+    color: var(--font-color);
+    font-size: 1.5rem;
+}
+
+.bannier nav {
+    display: flex;
+}
+
+.nav-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
 }
 
-.links {
-    display: flex;
-}
-
-.link {
+.nav-link {
     margin: 0 1rem;
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.link-text {
+    color: var(--font-color);
+    transition: transform 300ms ease-in-out, color 150ms ease-in-out;
+    transition-delay: 0, 150ms;
+}
+
+.link-text:hover {
+    color: var(--font-color-end);
+    transform: scale(1.2);
+    transition: transform 300ms ease-in-out, color 150ms ease-in-out;
+    transition-delay: 0, 150ms;
+}
+
+.nav-burger {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: inherit;
+    display: none;
+}
+
+/*==============================*/
+/*        PHONE SCREEN          */
+/*==============================*/
+@media screen and ( max-width: 767px ) {
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        height: 100vh;
+        visibility: hidden;
+        background-color: var(--bannier-color);
+        z-index: 10;
+    }
+    .show-nav .nav-links {
+        right: 0;
+        width: 100vw;
+        visibility: visible;
+    }
+    .nav-link {
+        display: block;
+        padding: 1.5rem;
+        font-size: 3vw;
+    }
+    .nav-burger {
+        position: fixed;
+        right: 1rem;
+        display: block;
+        align-self: center;
+        z-index: 10;
+    }
+    .nav-burger:hover {
+        cursor: pointer;
+    }
+    .burger-bar,
+    .burger-bar::after,
+    .burger-bar::before {
+        display: block;
+        width: 40px;
+        height: 2px;
+        position: relative;
+        border-radius: 3px;
+        background-color: var(--font-color);
+        transition: all .5s ease-in-out;
+    }
+    .burger-bar::after,
+    .burger-bar::before {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+    .burger-bar::after {
+        transform: translateY(12px);
+    }
+    .burger-bar::before {
+        transform: translateY(-12px);
+    }
+    .show-nav .burger-bar {
+        width: 0;
+        background: transparent;
+    }
+    .show-nav .burger-bar::before {
+        transform: rotate(45deg);
+    }
+    .show-nav .burger-bar::after {
+        transform: rotate(-45deg);
+    }
 }
