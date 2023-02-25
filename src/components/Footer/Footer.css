@@ -8,6 +8,7 @@
 
 .footer-container {
     font-family: var(--font);
+    font-size: 1.5vw;
     height: 150px;
     background-color: var(--backgroud-color);
     color: var(--font-color);
@@ -22,15 +23,4 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.network-button {
-    width: 50px;
-    height: 50px;
-    border: none;
-    background-color: transparent;
-}
-
-.network-button:hover {
-    background-color: red;
 }
