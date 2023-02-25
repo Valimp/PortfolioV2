@@ -33,11 +33,11 @@ export default function Home() {
             />
             <Section backgroundColor='#ffc857'>
                 <Content 
-                    title='Accueil' 
-                    content='Bonjour à tous !' 
+                    sectionTitle='Je me présente...' 
+                    content="Je m'appelle Valentin Chauvet et je suis un développeur web junior avec une grande passion pour le développement frontend. J'ai également de l'expérience en développement fullstack, ce qui me permet de disposer d'un ensemble de compétences polyvalentes. Je suis très curieux et j'aime apprendre de nouvelles choses. Je suis engagé dans la production d'un travail de haute qualité et je suis toujours à la recherche de nouveaux défis passionnants." 
                 />
             </Section>
-            <Section backgroundColor='#303634'>
+            <Section backgroundColor='#1d201f'>
             </Section>
             <Section backgroundColor='#ffc857'>
             </Section>

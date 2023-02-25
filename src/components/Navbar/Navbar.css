@@ -91,7 +91,7 @@
         font-size: 3vw;
     }
     .nav-burger {
-        position: fixed;
+        position: absolute;
         right: 1rem;
         display: block;
         align-self: center;
@@ -129,8 +129,13 @@
     }
     .show-nav .burger-bar::before {
         transform: rotate(45deg);
+        background-color: var(--font-color-end);
     }
     .show-nav .burger-bar::after {
         transform: rotate(-45deg);
+        background-color: var(--font-color-end);
+    }
+    .show-nav .nav-burger {
+        position: fixed;
     }
 }
