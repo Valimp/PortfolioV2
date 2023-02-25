@@ -18,17 +18,17 @@ export default function Home() {
                     {
                         id: 1,
                         'name': 'Experiences',
-                        'linkURL': '/'
+                        'linkURL': '/experiences'
                     },
                     {
                         id: 1,
                         'name': 'Portfolio',
-                        'linkURL': '/'
+                        'linkURL': '/portfolio'
                     },
                     {
                         id: 1,
                         'name': 'Contact',
-                        'linkURL': '/'
+                        'linkURL': '/contact'
                     },
                 ]}
             />
