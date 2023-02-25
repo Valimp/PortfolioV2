@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --font: 'Poppins', 'sans-serif';
+    --backgroud-color: #1d201f;
+    --font-color: #ffc857;
+}
+
+.footer-container {
+    font-family: var(--font);
+    height: 150px;
+    background-color: var(--backgroud-color);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.network-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.network-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.network-button:hover {
+    background-color: red;
+}
