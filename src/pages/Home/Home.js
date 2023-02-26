@@ -8,7 +8,7 @@ export default function Home() {
     return(
         <>
             <Navbar 
-                title="Valimp"
+                title="Valentin Chauvet"
                 links={[
                     {
                         id: 1,
@@ -35,10 +35,19 @@ export default function Home() {
             <Section backgroundColor='#ffc857'>
                 <Content 
                     textColor='#1d201f'
-                    sectionTitle='Je me présente...' 
-                    content="Je m'appelle Valentin Chauvet et je suis un développeur web junior avec une grande passion pour le développement frontend. J'ai également de l'expérience en développement fullstack, ce qui me permet de disposer d'un ensemble de compétences polyvalentes. Je suis très curieux et j'aime apprendre de nouvelles choses. Je suis engagé dans la production d'un travail de haute qualité et je suis toujours à la recherche de nouveaux défis passionnants." 
+                    sectionTitle='A propos de moi . . .' 
+                    content="Je m’appelle Valentin Chauvet, j’ai 24 ans, et je suis développeur fullstack avec une forte appétence pour le frontend." 
+                />
+                <Content 
+                    textColor='#1d201f'
+                    content="J’ai commencé ma formation de développeur web en 2021 en autoformation sur Open Classroom ou j’ai pu apprendre les bases du métier. J’ai enchaîné l’année suivante avec une licence professionnelle de développement web. J’ai pu y réaliser mes premiers projets et affiner mes compétences en frontend et backend."
+                />
+                <Content 
+                    textColor='#1d201f'
+                    content="Passionné par le web et par le monde de l’entreprenariat, j’apprécie tout particulièrement aider les entreprise a faire le premier pas dans le monde fabuleux du numérique afin d’accroître leur visibilité sur internet."
                 />
             </Section>
+
             <Section backgroundColor='#1d201f'>
                 <Content 
                     textColor='#ffc857'
@@ -46,6 +55,7 @@ export default function Home() {
                     content="Je suis un développeur fullstack spécialisé en front-end avec une expertise dans les technologies ReactJS, TailwindCSS, JavaScript, HTML5 et CSS. En back-end, je maîtrise Node.js, Express.js et MongoDB pour créer des applications web performantes et évolutives. Avec ces stacks, je suis capable de concevoir et développer des solutions innovantes qui répondent aux besoins de mes clients." 
                 />
             </Section>
+            
             <Section backgroundColor='#ffc857'>
                 <Content 
                     textColor='#1d201f'

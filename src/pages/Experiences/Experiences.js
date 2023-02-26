@@ -8,7 +8,7 @@ export default function Experiences() {
     return(
         <>
             <Navbar 
-                title="Valimp"
+                title="Valentin Chauvet"
                 links={[
                     {
                         id: 1,
