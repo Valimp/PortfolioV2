@@ -11,22 +11,18 @@ export default function Home() {
                 title="Valentin Chauvet"
                 links={[
                     {
-                        id: 1,
                         'name': 'Accueil',
                         'linkURL': '/'
                     },
                     {
-                        id: 1,
                         'name': 'Experiences',
                         'linkURL': '/experiences'
                     },
                     {
-                        id: 1,
                         'name': 'Portfolio',
                         'linkURL': '/portfolio'
                     },
                     {
-                        id: 1,
                         'name': 'Contact',
                         'linkURL': '/contact'
                     },

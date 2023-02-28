@@ -30,9 +30,9 @@ export default function Navbar( props ) {
 
             <nav className={ `bannier-nav ${ showLinks ? "show-nav" : "hide-nav" }` }>
                 <ul className='nav-links'>
-                    { props.links.map( ( link ) => (
+                    { props.links.map( ( link, index ) => (
 
-                        <li key={ link.id } className='nav-link'>
+                        <li key={ index } className='nav-link'>
                             <Link to={ link.linkURL }> <p className='link-text'>{ link.name }</p> </Link>
                         </li>
 
