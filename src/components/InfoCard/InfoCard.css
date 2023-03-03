@@ -1,0 +1,10 @@
+:root {
+    --container-width: 400px;
+}
+
+.info-card-container {
+    border-radius: calc(var(--container-width) * 0.05);
+    width: var(--container-width);
+    height: calc( var(--container-width) * 1.62 );
+    margin: 5rem;
+}

@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar.js'
 import Section from '../../components/Section/Section'
 import Content from '../../components/Content/Content'
 import Footer from '../../components/Footer/Footer'
+import InfoCard from '../../components/InfoCard/InfoCard'
 
 export default function Home() {
     return(
@@ -42,6 +43,11 @@ export default function Home() {
                     textColor='#1d201f'
                     content="Passionné par le web et par le monde de l’entreprenariat, j’apprécie tout particulièrement aider les entreprise a faire le premier pas dans le monde fabuleux du numérique afin d’accroître leur visibilité sur internet."
                 />
+                <div className='card-wrap'>
+                    <InfoCard backgroundColor='#1d201f' />
+                    <InfoCard backgroundColor='#1d201f' />
+                    <InfoCard backgroundColor='#1d201f' />
+                </div>
             </Section>
 
             <Section backgroundColor='#1d201f'>
